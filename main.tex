@@ -13,18 +13,18 @@
 % --- Configuração de Margens ---
 \geometry{top=1.5cm, bottom=1.5cm, left=2cm, right=2cm}
 \pagestyle{empty} 
+\setlist[itemize]{leftmargin=*, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=2pt}
 
 % --- Estilo de Links ---
 \hypersetup{colorlinks=true, urlcolor=blue}
 
 % Comando customizado para títulos de seção (limpo e sem erro de centralização)
 \newcommand{\resumosection}[1]{
-    \vspace{2mm}
-    \begin{center}
-        \textbf{\large #1} \\
-        \vspace{-2mm}
-        \rule{\linewidth}{0.4pt}
-    \end{center}
+    \vspace{4mm}
+    {\large\textbf{\MakeUppercase{#1}}} % Título em caixa alta e negrito
+    \vspace{1mm}
+    \hrule % Linha horizontal logo abaixo
+    \vspace{4mm}    
     \vspace{-2mm}
 }
 
@@ -33,6 +33,9 @@
 % --- Cabeçalho ---
 \noindent 
 {\huge \textbf{RAFAEL GARCIA PEDROSA}} \\
+% \vspace{1mm}
+\vspace{1mm}
+{\large \textcolor{gray}{Engenheiro de Dados | BI \& Analytics}} \\
 \vspace{1mm}
 \hrule
 \vspace{2mm}
@@ -43,11 +46,11 @@ LinkedIn: \textbf{\href{https://www.linkedin.com/in/rafaelgpedrosa/}{rafaelgpedr
 
 \vspace{4mm}
 
-% --- Atuação ---
-\resumosection{ATUAÇÃO}
-\begin{center}
-    \textbf{ENGENHARIA DE DADOS -- BI -- ANALYTICS}
-\end{center}
+% % --- Atuação ---
+% \resumosection{ATUAÇÃO}
+% \begin{center}
+%     \textbf{ENGENHARIA DE DADOS -- BI -- ANALYTICS}
+% \end{center}
 
 % --- Síntese de Qualificações ---
 \resumosection{SÍNTESE DE QUALIFICAÇÕES}
@@ -122,7 +125,9 @@ LinkedIn: \textbf{\href{https://www.linkedin.com/in/rafaelgpedrosa/}{rafaelgpedr
     \item Atuação em clientes dos segmentos: Revenda de medicamentos, fabricação de brinquedos e aluguel de carros elétricos. 
 \end{itemize}
 
-\textbf{Freelancing} \hfill 03/2018 -- 04/2019 \\
+\vspace{2mm}
+
+\noindent\textbf{Freelancing} \hfill 03/2018 -- 04/2019 \\
 \textit{Engenheiro Eletricista} \\
 \textbf{GWC CONSULTORIA E SERVIÇOS TÉCNICOS} \hfill 04/2016 -- 10/2017 \\
 \textit{Analista de Engenharia}\\
@@ -134,10 +139,10 @@ LinkedIn: \textbf{\href{https://www.linkedin.com/in/rafaelgpedrosa/}{rafaelgpedr
 \textit{Estagiário}
 
 % --- Habilidades Técnicas ---
-\resumosection{INFORMÁTICA}
-\begin{center}
-    \textbf{Excel Avançado -- Power BI -- DAX -- M -- Power Query -- SQL -- Python }
-\end{center}
+\resumosection{ferramentas}
+% \begin{center}
+\textbf{Excel Avançado -- Power BI -- DAX -- M -- Power Query -- SQL -- Python }
+% \end{center}
 
 \resumosection{CURSOS DE APERFEIÇOAMENTO}
 \begin{itemize}[leftmargin=*, noitemsep]
